@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jordan Romeny Software Development Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+        <!--fonts-->
+        <link href="https://fonts.googleaips.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="#" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__itme"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__itme"><a href="index.html#services" class="nav__link">My Skill Set</a></li>
+                    <li class="nav__itme"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__itme"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Intro-->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Inventory Management App</strong>
+            </h1>
+            
+            <p class="section__subtitle section__subtitle--intro">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jordan-romney/Inventory-Management-Java" class="btn">View the Full Code Here<img src="./assets/GitHub-Mark-32px.png" alt="GitHub" class="link__image"></a>
+            </p>
+            
+
+            <img src="./assets/Java2.PNG" alt="language logo" class="intro__image">
+            
+        </section>
+       
+        
+        <div class="portfolio-item-individual">
+            
+            <p>This Inventory Management App was a project from my Software Development Degree. This project highlights various Java concepts including:</p>
+                
+            <ul class="p__list">
+                <li>Classes, objects, and methods</li>
+                <li>Inheritance, encapsulation, and abstraction</li>
+                <li>Exception Handling</li>
+                <li>User Interface Development</li>
+            </ul>
+        </div>
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <div class="mySlides">
+                <img src="./assets/inventory/mainScreen.PNG" style="width:100%" onclick="currentSlide(1)">
+            </div>
+        
+            <div class="mySlides">
+                <img src="./assets/inventory/addPart.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="./assets/inventory/addProduct.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="./assets/inventory/modifyProduct.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./assets/inventory/dataTypeException.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <img src="./assets/inventory/deleteConfirmation.PNG" style="width:100%">
+            </div>
+        
+       
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/mainScreen.PNG" style="width:100%" onclick="currentSlide(1)" alt="Main Screen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/addPart.PNG" style="width:100%" onclick="currentSlide(2)" alt="Add Part">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/addProduct.PNG" style="width:100%" onclick="currentSlide(3)" alt="Add Product">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/modifyProduct.PNG" style="width:100%" onclick="currentSlide(4)" alt="Modify Product">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/dataTypeException.PNG" style="width:100%" onclick="currentSlide(4)" alt="Data Type Exception Handling">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./assets/inventory/deleteConfirmation.PNG" style="width:100%" onclick="currentSlide(5)" alt="Delte Confirmation">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-item-individual">
+
+            <p>
+                This was my first major Java project. Each screen had its own FXML file and a controller. The project consists of several classes including an abstract class. 
+                Two classes inherit from the abstract to use common methods. The abstract Part class was created to allow for other classes to function without knowing the bigger picture. 
+                The attributes of a part could be utilized by more specific and specialized types of parts.
+            </p>
+
+            <p>
+                All the classes contain encapsulated private variables and methods that are controlled by “getter” and “setter” methods. This allows users to access and set some data without causing 
+                changes to more sensitive properties of an object.
+            </p>
+
+            <p>
+                Throughout the app, there are checks to ensure that the program can handle unwanted behavior. The main use of this exception handling is when a user adds or updates a part or product. 
+                The data types of each text field are checked against what is required to complete a part or product object. If the data type is incorrect an error dialogue is displayed, and the user can not 
+                proceed without fixing the error. This prevents the application from displaying any unwanted behavior.
+            </p>
+
+            <p>
+                This project was completed using JavaFX and SceneBuilder to create a Graphical User Interface. This was the first project I had made with a GUI and I enjoyed being able to visualize exactly how 
+                users would interact with my code. I feel that creating a GUI allowed me to write cleaner more effective code since I knew exactly how each method and class would be manipulated by the user.
+            </p>
+
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto::romney.j15@gmail.com" class="footer__link">romney.j15@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href=https://www.github.com><img src="./assets/GitHub-Mark-Light-32px.png"></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=https://www.linkedin.com/in/jordan-romney><img src="./assets/linkedin-3-32.png"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
