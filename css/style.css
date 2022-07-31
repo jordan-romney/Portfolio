@@ -342,6 +342,7 @@ header{
 
 .about-me__img {
     box-shadow: var(--bs);
+    min-width: 300px;
 }
 
 @media (min-width: 800px) {
